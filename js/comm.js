@@ -12,6 +12,10 @@ $(".van-tab").on("click", function() {
 		.show();
 
 })
-$("html,body").on("click", function() {
-	window.location.href = "http://www.baidu.com"
+$(".js-link").on("click", function() {
+	window.location.href = "login.html"
+})
+$("#homelink").on("click", function(e) {
+	e.stopPropagation();
+	window.location.href = "index.html"
 })
